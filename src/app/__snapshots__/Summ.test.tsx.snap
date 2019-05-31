@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Summ accepts one parameter 1`] = `
+<Component
+  str="2"
+>
+  <div>
+    2
+  </div>
+</Component>
+`;
+
+exports[`Summ exists 1`] = `
+<Component
+  str=""
+>
+  <div>
+    0
+  </div>
+</Component>
+`;
+
+exports[`Summ te parent with its two nested children 1`] = `
+<Component
+  str="2"
+>
+  <div>
+    <Component
+      str="8"
+    >
+      <div>
+        <Component
+          str="11"
+        >
+          <div>
+            11
+          </div>
+        </Component>
+      </div>
+    </Component>
+  </div>
+</Component>
+`;
+
+exports[`Summ the parent with a complex tree of children 1`] = `
+<Component
+  str="1"
+>
+  <div>
+    <Component
+      key="0"
+      str="3"
+    >
+      <div>
+        <Component
+          str="6"
+        >
+          <div>
+            6
+          </div>
+        </Component>
+      </div>
+    </Component>
+    <Component
+      key="1"
+      str="5"
+    >
+      <div>
+        5
+      </div>
+    </Component>
+    <Component
+      key="2"
+      str="6"
+    >
+      <div>
+        6
+      </div>
+    </Component>
+  </div>
+</Component>
+`;
+
+exports[`Summ the parent with its soley child 1`] = `
+<Component
+  str="2"
+>
+  <div>
+    <Component
+      str="8"
+    >
+      <div>
+        8
+      </div>
+    </Component>
+  </div>
+</Component>
+`;
+
+exports[`Summ the parent with its two children separately 1`] = `
+<Component
+  str="1"
+>
+  <div>
+    <Component
+      key="0"
+      str="3"
+    >
+      <div>
+        3
+      </div>
+    </Component>
+    <Component
+      key="1"
+      str="4"
+    >
+      <div>
+        4
+      </div>
+    </Component>
+  </div>
+</Component>
+`;
