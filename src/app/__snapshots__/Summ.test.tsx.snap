@@ -2,7 +2,7 @@
 
 exports[`Summ accepts one parameter 1`] = `
 <Component
-  str="2"
+  v={2}
 >
   <div>
     2
@@ -12,7 +12,7 @@ exports[`Summ accepts one parameter 1`] = `
 
 exports[`Summ exists 1`] = `
 <Component
-  str=""
+  v={0}
 >
   <div>
     0
@@ -22,15 +22,15 @@ exports[`Summ exists 1`] = `
 
 exports[`Summ te parent with its two nested children 1`] = `
 <Component
-  str="2"
+  v={2}
 >
   <div>
     <Component
-      str="8"
+      v={8}
     >
       <div>
         <Component
-          str="11"
+          v={11}
         >
           <div>
             11
@@ -44,16 +44,16 @@ exports[`Summ te parent with its two nested children 1`] = `
 
 exports[`Summ the parent with a complex tree of children 1`] = `
 <Component
-  str="1"
+  v={1}
 >
   <div>
     <Component
       key="0"
-      str="3"
+      v={3}
     >
       <div>
         <Component
-          str="6"
+          v={6}
         >
           <div>
             6
@@ -63,7 +63,7 @@ exports[`Summ the parent with a complex tree of children 1`] = `
     </Component>
     <Component
       key="1"
-      str="5"
+      v={5}
     >
       <div>
         5
@@ -71,7 +71,7 @@ exports[`Summ the parent with a complex tree of children 1`] = `
     </Component>
     <Component
       key="2"
-      str="6"
+      v={6}
     >
       <div>
         6
@@ -83,11 +83,11 @@ exports[`Summ the parent with a complex tree of children 1`] = `
 
 exports[`Summ the parent with its soley child 1`] = `
 <Component
-  str="2"
+  v={2}
 >
   <div>
     <Component
-      str="8"
+      v={8}
     >
       <div>
         8
@@ -99,12 +99,12 @@ exports[`Summ the parent with its soley child 1`] = `
 
 exports[`Summ the parent with its two children separately 1`] = `
 <Component
-  str="1"
+  v={1}
 >
   <div>
     <Component
       key="0"
-      str="3"
+      v={3}
     >
       <div>
         3
@@ -112,7 +112,7 @@ exports[`Summ the parent with its two children separately 1`] = `
     </Component>
     <Component
       key="1"
-      str="4"
+      v={4}
     >
       <div>
         4
