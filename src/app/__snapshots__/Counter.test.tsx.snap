@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Counter exists 1`] = `
+<Counter
+  v={0}
+>
+  <div>
+    <span>
+      0
+    </span>
+    <button
+      onClick={[Function]}
+    >
+      Increase
+    </button>
+  </div>
+</Counter>
+`;
