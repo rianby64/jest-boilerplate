@@ -1,35 +1,22 @@
 
-import * as React from 'react';
+import * as React from "react";
+import { useState } from "react";
 
 interface CounterProps {
     v: number;
 }
 
-interface CounterState {
-    value: number;
-}
+export function Counter(props: CounterProps) {
+    const [counter, setCounter] = useState(props.v);
 
-export class Counter extends React.Component<CounterProps> {
-
-    public state: CounterState = {
-        value: this.props.v
+    function handleClick(): void {
+        setCounter(counter + 1);
     }
 
-    private increaseCounter = (): void => {
-        this.setState((state: CounterState): CounterState => {
-            return {
-                ...state,
-                value: 1 + state.value
-            };
-        });
-    }
-
-    public render(): JSX.Element {
-        return (
-            <div>
-                <span>{this.state.value}</span>
-                <button onClick={this.increaseCounter}>Increase</button>
-            </div>
-        );
-    }
+    return (
+        <div>
+            <span>{counter}</span>
+            <button onClick={handleClick}>Increase</button>
+        </div>
+    )
 }
